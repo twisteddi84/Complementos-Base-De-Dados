@@ -1,0 +1,51 @@
+1 - Escolher utilizador
+2 - Sair
+1
+Insira o seu username
+Diogo
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Insira o nome do produto
+pão
+Produto Adicionado com sucesso !
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Insira o nome do produto
+massa
+Produto Adicionado com sucesso !
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+2
+Nome do produto: pão
+Nome do produto: massa
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Insira o nome do produto
+arroz
+Você atingiu o limite de produtos.
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+2
+Nome do produto: pão
+Nome do produto: massa
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+3
+1 - Escolher utilizador
+2 - Sair
+2

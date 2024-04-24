@@ -1,0 +1,11 @@
+[
+  { "rating": 5, "video_id": 1 },
+  { "rating": 5, "video_id": 6 },
+  { "rating": 1, "video_id": 5 },
+  { "rating": 2, "video_id": 4 },
+  { "rating": 2, "video_id": 9 },
+  { "rating": 4, "video_id": 2 },
+  { "rating": 4, "video_id": 7 },
+  { "rating": 3, "video_id": 3 },
+  { "rating": 3, "video_id": 8 }
+]

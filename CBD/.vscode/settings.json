@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Guiao1/jedis-5.0.0.jar"
+    ]
+}

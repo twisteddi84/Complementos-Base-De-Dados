@@ -1,0 +1,106 @@
+[
+  {
+    "username_uploader": "utilizador3",
+    "tempo_upload": "2023-11-26 15:13:58.715Z",
+    "video_id": 3,
+    "descricao": "Descrição do Video_C",
+    "nome_video": "Video_C",
+    "tags": ["tag5", "tag6"]
+  },
+  {
+    "username_uploader": "joao1",
+    "tempo_upload": "2023-11-26 15:13:58.707Z",
+    "video_id": 1,
+    "descricao": "Descrição do Video_A",
+    "nome_video": "Video_A",
+    "tags": ["Aveiro", "Lisboa"]
+  },
+  {
+    "username_uploader": "joao1",
+    "tempo_upload": "2023-11-26 15:13:58.719Z",
+    "video_id": 4,
+    "descricao": "Descrição do Video_D",
+    "nome_video": "Video_D",
+    "tags": ["Aveiro", "Prank"]
+  },
+  {
+    "username_uploader": "joao1",
+    "tempo_upload": "2023-11-26 15:13:58.742Z",
+    "video_id": 8,
+    "descricao": "Descrição do Video_H",
+    "nome_video": "Video_H",
+    "tags": ["Aveiro", "tag16"]
+  },
+  {
+    "username_uploader": "maria2",
+    "tempo_upload": "2023-11-26 15:13:58.711Z",
+    "video_id": 2,
+    "descricao": "Descrição do Video_B",
+    "nome_video": "Video_B",
+    "tags": ["Aveiro", "Prank", "tag1"]
+  },
+  {
+    "username_uploader": "maria2",
+    "tempo_upload": "2023-11-26 15:13:58.749Z",
+    "video_id": 10,
+    "descricao": "Descrição do Video_J",
+    "nome_video": "Video_J",
+    "tags": ["tag19", "tag20"]
+  },
+  {
+    "username_uploader": "utilizador7",
+    "tempo_upload": "2023-11-26 15:13:58.739Z",
+    "video_id": 7,
+    "descricao": "Descrição do Video_G",
+    "nome_video": "Video_G",
+    "tags": ["tag13", "tag14"]
+  },
+  {
+    "username_uploader": "utilizador12",
+    "tempo_upload": "2023-11-26 15:13:58.756Z",
+    "video_id": 12,
+    "descricao": "Descrição do Video_L",
+    "nome_video": "Video_L",
+    "tags": ["tag23", "tag24"]
+  },
+  {
+    "username_uploader": "utilizador9",
+    "tempo_upload": "2023-11-26 15:13:58.745Z",
+    "video_id": 9,
+    "descricao": "Descrição do Video_I",
+    "nome_video": "Video_I",
+    "tags": ["tag17", "tag18"]
+  },
+  {
+    "username_uploader": "utilizador5",
+    "tempo_upload": "2023-11-26 15:13:58.722Z",
+    "video_id": 5,
+    "descricao": "Descrição do Video_E",
+    "nome_video": "Video_E",
+    "tags": ["Corrida", "tag1"]
+  },
+  {
+    "username_uploader": "utilizador11",
+    "tempo_upload": "2023-11-26 15:13:58.752Z",
+    "video_id": 11,
+    "descricao": "Descrição do Video_K",
+    "nome_video": "Video_K",
+    "tags": ["tag21", "tag22"]
+  },
+  {
+    "username_uploader": "utilizador6",
+    "tempo_upload": "2017-08-10 10:10:00.000Z",
+    "video_id": 6,
+    "descricao": "Descrição do Video_F",
+    "nome_video": "Video_F",
+    "tags": ["tag11", "tag12"]
+  },
+  {
+    "username_uploader": "utilizador6",
+    "tempo_upload": "2023-11-26 15:13:58.733Z",
+    "video_id": 20,
+    "descricao": "Descrição do Video_F12",
+    "nome_video": "Video_F12",
+    "tags": ["tag11", "tag12"]
+  }
+]

@@ -1,0 +1,47 @@
+1 - Escolher utilizador
+2 - Sair
+1
+Username:Diogo
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:pao
+Quantidade:10
+Faltam 20 produtos para o timeslot
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:massa
+Quantidade:5
+Faltam 15 produtos para o timeslot
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:pao
+Quantidade:4
+Faltam 11 produtos para o timeslot
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+2
+Produtos pedidos -> [pao-14, massa-5]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:arroz
+Quantidade:16
+Não é possível adicionar o produto
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+

@@ -1,0 +1,62 @@
+1 - Escolher utilizador
+2 - Sair
+1
+Username:Diogo
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:pao
+Faltam 4 produtos para atingir o limite no timeslot
+Produto adicionado com sucesso -> [pao]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:massa
+Faltam 3 produtos para atingir o limite no timeslot
+Produto adicionado com sucesso -> [pao, massa]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:arroz
+Faltam 2 produtos para atingir o limite no timeslot
+Produto adicionado com sucesso -> [pao, massa, arroz]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:escova
+Faltam 1 produtos para atingir o limite no timeslot
+Produto adicionado com sucesso -> [pao, massa, arroz, escova]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:lentes
+Faltam 0 produtos para atingir o limite no timeslot
+Produto adicionado com sucesso -> [pao, massa, arroz, escova, lentes]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Produto:frango
+Limite de produtos atingido
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+2
+Produtos pedidos -> [pao, massa, arroz, escova, lentes]
+Username -> Diogo
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+

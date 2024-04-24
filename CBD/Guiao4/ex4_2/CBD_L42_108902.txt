@@ -1,0 +1,126 @@
+// NMEC: 108902
+
+#1
+MATCH (p:Person)-[:DIRECTED]->(m)<-[:ACTED_IN]-(p) return p.name,m.title;
+
+#2
+match (p1:Person)-[:ACTED_IN]->(m) WHERE m.released > 2005 return p1.name;
+
+#3
+MATCH (n)-[relacao1]-(m)-[relacao2]-(n)
+WITH n, m, COUNT(*) as numRelacoes
+WHERE numRelacoes > 1
+RETURN n, m, numRelacoes;
+
+#4
+MATCH (p1:Person)-[:REVIEWED]->(m1:Movie)<-[:REVIEWED]-(p2:Person) return p1.name,p2.name,m1.title
+
+#5
+MATCH (p1:Person)-[:ACTED_IN]->(m1)<-[:ACTED_IN]-(p2:Person)
+WHERE p1 <> p2
+WITH p1,p2,count(m1) as numero_filmes
+WHERE numero_filmes>1
+return p1,p2,numero_filmes
+
+#6
+MATCH (p1:Person)-[:ACTED_IN]->(m1:Movie) 
+WHERE m1.title = 'Apollo 13' 
+WITH p1,m1,m1.released-p1.born as idade 
+WITH m1, avg(idade) as idade_media 
+return m1, idade_media
+
+#7
+MATCH (p1:Person)-[:ACTED_IN]->(m1:Movie)
+WITH p1,m1,m1.released-p1.born as idade 
+WITH m1, round(avg(idade),2) as idade_media 
+order by idade_media Desc
+limit 10
+return m1,idade_media
+
+#8
+MATCH (p1:Person)-[:ACTED_IN]->(m1:Movie)
+WITH p1,m1,m1.released-p1.born as idade 
+WITH m1 ,avg(idade) as idade_media 
+ORDER BY idade_media ASC
+LIMIT 1
+MATCH (p2:Person)-[:ACTED_IN]->(m1)
+return p2,m1
+
+#9
+MATCH caminho_mais_curto=shortestPath((p1:Person {name:"John Cusack"})-[*]-(p2:Person {name:"Demi Moore"}))
+RETURN caminho_mais_curto
+
+#10
+MATCH caminho_mais_curto=shortestPath(
+(p1:Person {name:"Keanu Reeves"})-[*]-(p2:Person {name:"Tom Cruise"})
+)
+WITH length(caminho_mais_curto) as dimensao
+RETURN dimensao
+
+#11
+MATCH path = shortestPath((p1:Person)-[*]-(p2:Person))
+WHERE p1.name contains 'Jim' and p2.name contains 'Kevin'
+with p1,p2, length(path) as distancia
+return p1,p2,distancia
+
+#12
+MATCH path = shortestPath((p1:Person {name: "Jim Cash"})-[*1..2]-(p2:Person))
+WHERE p1 <> p2 
+with p1,p2,length(path) as distancia
+Where distancia = 2
+return p1,p2,distancia
+
+#13
+MATCH path = shortestPath((p1:Person {name: "Kevin Bacon"})-[*]-(p2:Person))
+WHERE p1 <> p2 
+with p1,p2,length(path) as distancia
+ORDER BY distancia DESC
+LIMIT 1
+return p1,p2,distancia
+
+#14
+MATCH path = shortestPath((p1:Person)-[*]-(p2:Person))
+WHERE p1 <> p2 
+with p1,p2,length(path) as distancia
+ORDER BY distancia DESC
+LIMIT 1
+return p1,p2,distancia
+
+
+#15
+MATCH path = allShortestPaths((p1:Person)-[*]-(p2:Person))
+WHERE p1 <> p2
+WITH p1, p2, length(path) AS distancia
+RETURN distancia, COUNT(*) AS quantidade
+ORDER BY distancia;
+
+#16
+MATCH path = shortestPath((p1:Person)-[:ACTED_IN*]-(p2:Person))
+WHERE p1 <> p2 
+with p1,p2,avg(length(path)) as distancia_media
+ORDER BY distancia_media ASC
+LIMIT 10
+return p1,p2,distancia_media
+
+#17
+MATCH (actor:Person)-[r:ACTED_IN]->(movie:Movie)
+WHERE ANY(role IN r.roles WHERE role STARTS WITH 'Dr')
+RETURN actor.name, r.roles;
+
+#18 Quais são os três atores que mais atuaram em filmes durante a década de 2000?
+MATCH (actor:Person)-[:ACTED_IN]->(movie:Movie)
+WHERE movie.released >= 2000 AND movie.released < 2010
+RETURN actor.name AS Ator, COUNT(movie) AS NumeroDeFilmesAtuados
+ORDER BY NumeroDeFilmesAtuados DESC
+LIMIT 3;
+
+#19 Quais são os cinco filmes mais antigos nos quais o ator Tom Hanks atuou?
+MATCH (actor:Person {name: 'Tom Hanks'})-[:ACTED_IN]->(movie:Movie)
+RETURN movie.title AS Filme, movie.released AS AnoDeLancamento
+ORDER BY AnoDeLancamento ASC
+LIMIT 5
+
+#20 Duas avaliaçoes com o maior rating a um filme. 
+MATCH (p:Person)-[r:REVIEWED]->(m:Movie) return p,m,r.rating order by r.rating DESC LIMIT 2
+
+

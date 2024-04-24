@@ -1,0 +1,11 @@
+[
+  { "video_id": 10, "username": "joao1" },
+  { "video_id": 1, "username": "carlos3" },
+  { "video_id": 1, "username": "joao1" },
+  { "video_id": 1, "username": "maria2" },
+  { "video_id": 2, "username": "ana4" },
+  { "video_id": 2, "username": "carlos3" },
+  { "video_id": 2, "username": "joao1" },
+  { "video_id": 2, "username": "maria2" },
+  { "video_id": 3, "username": "ana4" }
+]

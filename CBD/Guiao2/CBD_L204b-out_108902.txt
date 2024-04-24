@@ -1,0 +1,51 @@
+//public static int limite_produtos = 30;
+//public static int tempo = 120;
+1 - Escolher utilizador
+2 - Sair
+1
+Insira o seu username
+utilizador1
+Username -> utilizador1
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Insira o nome do produto
+pao
+Quantidade de produtos:
+15
+Produtos Adicionado com sucesso !
+Username -> utilizador1
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+
+//Wait 2 minutes
+
+1
+Insira o nome do produto
+massa
+Quantidade de produtos:
+16
+Produtos Adicionado com sucesso !
+Username -> utilizador1
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+1
+Insira o nome do produto
+arroz
+Quantidade de produtos:
+17
+Excedeu o limite de produtos.
+Username -> utilizador1
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair
+2
+Nome do produto: pao -- Quantidade do produto: 15
+Nome do produto: massa -- Quantidade do produto: 16
+Username -> utilizador1
+1 - Pedir produto
+2 - Ver produtos pedidos
+3 - Sair

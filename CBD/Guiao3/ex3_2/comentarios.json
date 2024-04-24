@@ -1,0 +1,74 @@
+[
+  {
+    "video_id": 5,
+    "tempo_comentario": "2023-11-26 15:13:58.772Z",
+    "username_comentador": "carlos3",
+    "comentario": "Comentario 7"
+  },
+  {
+    "video_id": 1,
+    "tempo_comentario": "2023-01-03 02:10:00.000Z",
+    "username_comentador": "joao1",
+    "comentario": "Comentario 11"
+  },
+  {
+    "video_id": 1,
+    "tempo_comentario": "2023-11-25 10:30:00.000Z",
+    "username_comentador": "joao1",
+    "comentario": "Comentario 12"
+  },
+  {
+    "video_id": 1,
+    "tempo_comentario": "2023-11-26 15:13:58.757Z",
+    "username_comentador": "joao1",
+    "comentario": "Comentario 1"
+  },
+  {
+    "video_id": 1,
+    "tempo_comentario": "2023-11-26 15:13:58.760Z",
+    "username_comentador": "maria2",
+    "comentario": "Comentario 2"
+  },
+  {
+    "video_id": 1,
+    "tempo_comentario": "2023-11-26 15:13:58.764Z",
+    "username_comentador": "carlos3",
+    "comentario": "Comentario 3"
+  },
+  {
+    "video_id": 8,
+    "tempo_comentario": "2023-11-26 15:13:58.780Z",
+    "username_comentador": "maria2",
+    "comentario": "Comentario 10"
+  },
+  {
+    "video_id": 2,
+    "tempo_comentario": "2023-11-26 15:13:58.765Z",
+    "username_comentador": "ana4",
+    "comentario": "Comentario 4"
+  },
+  {
+    "video_id": 4,
+    "tempo_comentario": "2023-11-26 15:13:58.769Z",
+    "username_comentador": "maria2",
+    "comentario": "Comentario 6"
+  },
+  {
+    "video_id": 7,
+    "tempo_comentario": "2023-11-26 15:13:58.778Z",
+    "username_comentador": "joao1",
+    "comentario": "Comentario 9"
+  },
+  {
+    "video_id": 6,
+    "tempo_comentario": "2023-11-26 15:13:58.776Z",
+    "username_comentador": "ana4",
+    "comentario": "Comentario 8"
+  },
+  {
+    "video_id": 3,
+    "tempo_comentario": "2023-11-26 15:13:58.767Z",
+    "username_comentador": "joao1",
+    "comentario": "Comentario 5"
+  }
+]

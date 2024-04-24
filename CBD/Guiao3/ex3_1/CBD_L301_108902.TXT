@@ -1,0 +1,25 @@
+CREATE KEYSPACE IF NOT EXISTS escola_keyspace WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3}; --Criar o keyspace
+
+USE escola_keyspace; --Usar o keyspace
+
+CREATE TABLE IF NOT EXISTS tabela_alunos (id uuid PRIMARY KEY, nome text, idade int, momento_entrada TIMESTAMP); --Criar a tabela
+
+BEGIN BATCH
+Insert into tabela_alunos (id, nome, idade, momento_entrada) values (uuid(), 'João Silva', 20, toTimestamp(now()));
+Insert into tabela_alunos (id, nome, idade, momento_entrada) values (uuid(), 'Maria Gomes', 22, toTimestamp(now()));
+Insert into tabela_alunos (id, nome, idade, momento_entrada) values (uuid(), 'José Carvalho', 21, toTimestamp(now()));
+APPLY BATCH; --Inserir dados na tabela
+
+SELECT * FROM tabela_alunos; --Selecionar todos os dados da tabela
+
+CREATE INDEX IF NOT EXISTS tabela_alunos_nome ON tabela_alunos (nome); --Criar um índice para a tabela
+
+-- tabela de professores com chave primária composta por id, disciplina e nome do professor e com um map de turmas e respetivo número de alunos
+CREATE TABLE IF NOT EXISTS tabela_professores (id uuid, nome text, idade int,disciplina text, turmas map<text,int> ,momento_entrada TIMESTAMP , PRIMARY KEY(id,disciplina,nome)); --Criar a tabela
+
+BEGIN BATCH
+Insert into tabela_professores (id, nome, idade, disciplina, turmas, momento_entrada) values (uuid(), 'Mário Matos', 20, 'Matemática', {'Turma A': 20, 'Turma B': 30}, toTimestamp(now()));
+Insert into tabela_professores (id, nome, idade, disciplina, turmas, momento_entrada) values (uuid(), 'Ana Ferreira', 22, 'Português', {'Turma A': 20, 'Turma B': 30}, toTimestamp(now()));
+APPLY BATCH; --Inserir dados na tabela
+
+SELECT * FROM tabela_professores WHERE disciplina = 'Matemática' ALLOW FILTERING; --Selecionar todos os professores de uma disciplina

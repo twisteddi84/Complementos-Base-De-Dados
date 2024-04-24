@@ -1,0 +1,12 @@
+ping
+set teste 23
+incr teste
+del teste
+HMSET user:1 username Diogo password 123456
+HGETALL user:1
+rpush lista1 20
+rpush lista1 31
+rpush lista1 45
+lrange lista1 0 100
+lpop lista1 
+lrange lista1 0 100

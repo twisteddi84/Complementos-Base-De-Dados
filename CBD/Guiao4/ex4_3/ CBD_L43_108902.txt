@@ -1,0 +1,45 @@
+LOAD CSV WITH HEADERS FROM 'file:///git_selection.csv' AS row
+
+MERGE (p:Person {svn_id: row.svn_id})
+SET p.num = toInteger(row.num),
+    p.real_name = COALESCE(p.real_name, row.real_name)
+
+MERGE (pr:Project {name: row.project_name})
+
+MERGE (o:Organization {name: row.organization})
+
+MERGE (p)-[:CONTRIBUTES {role_on_project: row.role_on_project}]->(pr)
+MERGE (p)-[:BELONGS_TO]->(o);
+
+
+
+#1
+match(p:Person) return p.num, p.real_name, p.svn_id
+
+#2
+match(p:Person) return p.real_name as Real_Name
+
+#3
+MATCH (u:Person)-[:CONTRIBUTES]->(p:Project) with p, count(u) as numero_users where numero_users>=1 return p
+
+#4
+MATCH (u:Person)-[:CONTRIBUTES]->(p:Project) with u,count(p) as numero_projetos return u,numero_projetos
+
+#5
+MATCH (u:Person)-[:CONTRIBUTES]->(p:Project) with u,count(p) as numero_projetos return u,numero_projetos order by numero_projetos DESC
+
+#6
+MATCH (u:Person)-[:CONTRIBUTES]->(p:Project) with p, count(u) as numero_users return p,numero_users
+
+#7
+MATCH (u:Person)-[c:CONTRIBUTES {role_on_project: 'Committer'}]->(p:Project)
+with p,count(u) as numero_commiters
+return p,numero_commiters
+
+#8
+MATCH (atm:Person {svn_id: "atm"})-[:CONTRIBUTES]->(project:Project)<-[:CONTRIBUTES]-(otherUser:Person)
+RETURN atm.real_name, otherUser.real_name, project.name;
+
+#9
+MATCH (atm:Person {svn_id: "atm"})-[:CONTRIBUTES{role_on_project:'PMC'}]->(project:Project)<-[:CONTRIBUTES{role_on_project:'Committer'}]-(otherUser:Person)
+RETURN atm.real_name, otherUser.real_name, project.name;

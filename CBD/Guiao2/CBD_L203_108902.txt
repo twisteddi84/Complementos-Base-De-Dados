@@ -1,0 +1,82 @@
+--------------------------------------------------
+public static void getLocalidades(String city)
+
+Total de restaurantes no Bronx: 309
+--------------------------------------------------
+public static void getInfoStartWith(String city)
+
+{"localidade": "Brooklyn", "gastronomia": "Delicatessen", "nome": "Wilken'S Fine Food", "restaurant_id": "40356483"}
+{"localidade": "Bronx", "gastronomia": "American", "nome": "Wild Asia", "restaurant_id": "40357217"}
+{"localidade": "Bronx", "gastronomia": "Pizza", "nome": "Wilbel Pizza", "restaurant_id": "40871979"}
+--------------------------------------------------
+public static void getInfEqualDown(int value)
+
+{"localidade": "Brooklyn", "gastronomia": "Hamburgers", "grades": [{"score": 2}, {"score": 3}, {"score": 0}], "nome": "White Castle"}
+{"localidade": "Manhattan", "gastronomia": "Café/Coffee/Tea", "grades": [{"score": 2}, {"score": 2}, {"score": 2}, {"score": 2}], "nome": "Cafe Madison"}
+{"localidade": "Manhattan", "gastronomia": "American", "grades": [{"score": 0}, {"score": 3}, {"score": 2}], "nome": "Citibank Executive Conference Center"}
+{"localidade": "Manhattan", "gastronomia": "American", "grades": [{"score": 3}, {"score": 2}, {"score": 2}, {"score": 0}], "nome": "Kenyon & Kenyon Cafeteria"}
+{"localidade": "Manhattan", "gastronomia": "American", "grades": [{"score": 2}, {"score": 0}], "nome": "Gold Bar B"}
+{"localidade": "Manhattan", "gastronomia": "American", "grades": [{"score": 0}, {"score": 0}, {"score": 2}], "nome": "Circle In The Square Theatre"}
+{"localidade": "Brooklyn", "gastronomia": "American", "grades": [{"score": 3}], "nome": "Stand # 210"}
+--------------------------------------------------
+public static void getInfoAllDays()
+
+{"_id": 1, "numGrades": 7}
+{"_id": 2, "numGrades": 3186}
+{"_id": 3, "numGrades": 3878}
+{"_id": 4, "numGrades": 4118}
+{"_id": 5, "numGrades": 3984}
+{"_id": 6, "numGrades": 2440}
+{"_id": 7, "numGrades": 529}
+--------------------------------------------------
+public static void getTotalRua(String rua)
+
+{"_id": "Latin (Cuban, Dominican, Puerto Rican, South & Central American)"}
+{"_id": "Sandwiches/Salads/Mixed Buffet"}
+{"_id": "American"}
+{"_id": "Irish"}
+
+--------------------------------------------------
+public static int countLocalidades()
+
+Total de localidades diferentes: 5
+--------------------------------------------------
+public static Map<String, Integer> countRestByLocalidade()
+
+Número de restaurantes por localidade:
+-> Queens - 738
+-> Staten Island - 158
+-> Manhattan - 1883
+-> Brooklyn - 684
+-> Bronx - 309
+
+--------------------------------------------------
+public static List<String> getRestWithNameCloserTo(String name)
+
+Nome dos restaurantes contendo 'Park' no nome:
+-> Morris Park Bake Shop
+-> New Park Pizzeria & Restaurant
+-> Parkside Restaurant
+-> New Parkway Restaurant
+-> Sparks Steak House
+-> Park Plaza Restaurant
+-> Pizza Park
+-> Rego Park Cafe
+-> Park Billiards
+-> Dyker Park Bagels
+-> Nora'S Park Bench Cafe
+-> Forest Park Golf Course
+-> Park Italian Gourment
+-> Whiskey Park
+-> Terrace On The Park
+-> Gigino At Wagner Park
+-> Park Slope Ale House
+-> Tribeca Park Cafe
+-> Park Bar
+-> Morris Park Pizza
+-> The Hallmark Of Battery Park City- Dining Room
+-> The Park
+-> Central Park Boathouse
+-> The Park Slope Chipshop
+-> Sunset Park Diner & Donuts
+-> Park'S Snack

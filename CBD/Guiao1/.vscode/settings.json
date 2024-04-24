@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "redis/ex3/jedis-5.0.0.jar",
+        "jedis-5.0.0.jar"
+    ]
+}
